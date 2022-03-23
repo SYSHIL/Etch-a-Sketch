@@ -3,9 +3,45 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.title h1{
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
 .board{
     width: 500px;
     height: 500px;
     display : grid;
-    outline: 1px solid black;
+    outline: 1px solid rgb(0, 0, 0);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap : 20px;
+}
+button{
+    width: 100px;
+    opacity: 0.75;
+    color : white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+button[data-key="black"]{
+    background-color: rgb(0, 0, 0);
+}
+button[data-key="red"]{
+    background-color: rgb(0, 0, 0);
+}
+button[data-key="random"]{
+    background-color: rgb(0, 0, 0);
+}
+button:hover{
+    opacity: 1;
+}
+.input{
+    display: flex;
+    justify-content: center;
 }
